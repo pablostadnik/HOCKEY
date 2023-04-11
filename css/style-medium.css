@@ -1,0 +1,630 @@
+
+@font-face {
+    font-family: 'oswaldbook';
+    src: url('fuentes/oswald-regular-webfont.eot');
+    src: url('fuentes/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/fuentes/oswald-regular-webfont.woff') format('woff'),
+         url('fuentes/oswald-regular-webfont.ttf') format('truetype'),
+         url('fuentes/oswald-regular-webfont.svg#oswaldbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'oswaldlight';
+    src: url('fuentes/oswald-light-webfont.eot');
+    src: url('fuentes/oswald-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/oswald-light-webfont.woff') format('woff'),
+         url('fuentes/oswald-light-webfont.ttf') format('truetype'),
+         url('fuentes/oswald-light-webfont.svg#oswaldlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('fuentes/oswald-bold-webfont.eot');
+    src: url('fuentes/oswald-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/oswald-bold-webfont.woff') format('woff'),
+         url('fuentes/oswald-bold-webfont.ttf') format('truetype'),
+         url('fuentes/oswald-bold-webfont.svg#oswaldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ==|== primary styles =====================================================
+   Author: 
+   ========================================================================== */
+#mainpage, #mainnavbar{width:100%;height:auto; float:left; font-family: 'Cabin', sans-serif;}
+#mainpage{background:#f7f7f7 url(../image/bg_body.png) repeat-x top; }
+#mainnavbar{ border-bottom:1px solid #d5d6d8; border-top:1px solid #d5d6d8;}
+.mainPie{width:100%;height:auto; float:left; background:#2f343a;font-family: 'Cabin', sans-serif;}
+/* marco comtiene toda el esqueleto web */
+#marco, #innerHeader{ max-width:730px; width:100%;height:auto;margin:0 auto;}
+/* cuerpo todo el contenido menos pie*/
+#cuerpo{width:100%;height:auto; float:left;}
+
+/*-------Header------*/
+header{width:100%;height:180px;position:relative;float:left; background:#fff;}
+#innerHeader{background:url(../image/cah-luciana-aymar.png) no-repeat 13% 0;height:120px;}
+h1#logo{width:25%;max-width:301px;float:left; margin:0 0 0 0; }
+h1#logo a {display:block;  width:100%; 
+height:89px;  margin:15px 0 0 0; position:relative; float:left;}
+h1#logo a img{ width:100%; }
+.maintop{width:72%;max-width:678px;float: right; margin:0;}
+.top{width:100%;position:relative;float:left; margin:15px 0 0 0;}
+p.fecha_top{ float:left; text-align:right; width:85%; font-size:0.8125em; margin-top:7px;}
+h3.headline{ float:left; font-size:1.4375em; font-family: 'oswaldlight'; color:#2f343a; font-weight:normal; margin:20px 0 27px 30px;}
+.azul{color:#4268cb;}
+.azul2{ color:#00aeef;}
+.negrita{font-family: 'oswaldbold';}
+
+.redes { width:14%;float: right; position:relative;	font-family: 'oswaldbook';
+ margin: 0; }
+.redes ul, .redes li { float:left;}
+.redes ul{ margin:0; padding:0;}
+
+.redes li a{display:block;text-decoration:none; text-align:center; text-transform:uppercase;text-indent:-5000em; width:35px; height:32px;padding:0; border-left: 1px solid #d7d7d7;}
+
+.redes li a.f{  background:url(../image/redes.jpg) no-repeat 0 0;}
+.redes li a.y{ background:url(../image/redes.jpg) no-repeat -35px 0;border-right: 1px solid #d7d7d7; }
+
+
+.top form{width:50%;float:left;}
+.top form p{ float:right; margin:0; padding:0;}
+.top form p input{ float:left;}
+.top form p input.input{ width:50%; background:#fff; border:1px solid #cfd0d1; margin:0 5px 0 15px;padding:3px 5px ; }
+.top form p input.submit{ width:35%;display:block;font-size:0.75em;  text-decoration:none; text-align:center; text-transform:uppercase; padding:5px 10px ; color:#fff;font-family: 'oswaldbook'; background:#4268cb; margin:0; border:none;}
+.navTop{ width:49%;float:left;}
+.navTop ul{ float: right; padding:0; margin:0;} 
+.navTop li { float:left;}
+.navTop li a{display:block;font-size:0.75em;  text-decoration:none; text-align:center; text-transform:uppercase; padding:6px 10px ; color:#fff;
+font-family: 'oswaldbook'; background:#4268cb; margin:0 10px 0 0;
+}
+
+.navTop li a.capac{display:block;font-size:0.75em;  text-decoration:none; text-align:center; text-transform:uppercase; padding:6px 10px ; color:#fff;
+font-family: 'oswaldbook'; background:#318a2e; margin:0 10px 0 0;
+}
+
+
+.accordionButton {
+	display:none;
+	width: 100px;
+	text-align:center;
+	float: left;
+	_float: none;  /* Float works in all browsers but IE6 */
+	
+	cursor: pointer;
+	text-transform:uppercase;
+	font-family: 'oswaldbook';
+	color:#fff;
+	font-size:1em;
+	height:32px;
+	padding:10px 0 0 0;
+	margin:0 0 0 2%;
+	}
+	
+.accordionContent {	
+	width: 100%;
+	float: left;
+	_float: none; /* Float works in all browsers but IE6 */
+	
+	margin:0 0 0 2%;
+	
+	}
+.navbar{max-width:730px; width:100%;height:auto;margin:0 auto; height:35px;}
+#menu { width:100%;float: left; position:relative;font-family: 'oswaldbook';margin:0; }
+#menu ul, #menu li { float:left;}
+#menu ul{ margin:0 ; padding:0;width:100%; border-right:1px solid #d5d6d8;}
+#menu li { width:7.5em; border-left:1px solid #d5d6d8; } 
+#menu li a{display:block;font-size:0.875em;  text-decoration:none; text-align:center; text-transform:uppercase; padding: 10px 0; color:#2f343a;}
+#menu li a:hover, #menu li.active a{ color:#fff; background:#4268cb; }
+
+
+/*** ESSENTIAL STYLES ***/
+
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			9em; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%;
+
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	
+	position:		relative;
+}
+#menu .sf-menu li  ul li{
+	float:left;
+	width:100%;
+	position:relative;
+	height:45px;
+	border-left:none;		 
+}
+#menu li.ult{width:7.6em;}
+
+#menu .sf-menu li  a:hover{color:#fff; background:#4268cb;}
+
+#menu .sf-menu li  ul {border-right:none;}
+
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			1px;
+	top:			2.2em; /* match top ul list item height */
+	z-index:		300;
+	padding:0;
+	-webkit-box-shadow:  1px 1px 7px 1px rgba(0, 0, 0, 0.1);
+    box-shadow:  1px 1px 7px 1px rgba(0, 0, 0, 0.1);
+	
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			16em; /* match ul width */
+	top:			0;
+}
+ ul.sf-menu li li:hover li ul,
+ ul.sf-menu li li.sfHover li ul {
+	
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			7em; /* match ul width */
+	top:			0;
+}
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	float:			left;
+	margin-bottom:	1em;
+}
+
+#menu .sf-menu  li  li a {
+padding:10px;
+text-decoration:none;
+text-align:left;
+color:	#fff; font-size:0.75em;
+}
+.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#fff;
+}
+.sf-menu li {
+
+}
+#menu .sf-menu li li {
+	background:#2f343a;
+}
+#menu .sf-menu li li:hover {
+	
+}
+.sf-menu li li li {
+	
+}
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	color:			#eee;
+	outline:		0;
+}
+
+/*** arrows **/
+.sf-menu a.sf-with-ul {
+	padding-right: 	2.25em;
+	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+}
+.sf-sub-indicator {
+	position:		absolute;
+	display:		block;
+	right:			.75em;
+	top:			1.05em; /* IE6 only */
+	width:			10px;
+	height:			10px;
+	text-indent: 	-999em;
+	overflow:		hidden;
+	background:		none; /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	top:			.8em;
+	background-position: 0 -100px; /* use translucent arrow for modern browsers*/
+}
+/* apply hovers to modern browsers */
+a:focus > .sf-sub-indicator,
+a:hover > .sf-sub-indicator,
+a:active > .sf-sub-indicator,
+li:hover > a > .sf-sub-indicator,
+li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px -100px; /* arrow hovers for modern browsers*/
+}
+
+
+
+
+#main{width:100%;height:auto; float:left; padding-bottom:40px;}
+
+
+
+
+
+
+
+
+#pag{width:120px; float:right; position:relative; z-index:3000; margin:-40px 10px 0 0;}
+#pag a {float:left;  width:22px; height:18px;  padding:0; background:url(../image/pag.png) no-repeat  0 0;text-indent:-5000px;}
+#pag a.activeSlide{  background:url(../image/pag.png) no-repeat -24px 0 ; }
+
+
+/*-------Colder------*/
+#colder{width:42%;height:auto;position:relative;float: left;margin:0;border-left:1px solid #c0d2e7; }
+.mainTab{ width:100%;padding:0 4px; float:left;background:#4268cb;}
+.box, .box2, .wrap{ float:left;}
+
+.wrap{ width:100%; background:#fff; border-bottom:1px solid #d5d6d8; padding:0;}
+.mainSlider{max-width:415px; width:57%;position:relative; float:left; overflow:hidden; }
+
+.nota{ width:42%; max-width:319px; height:170px; margin:20px 3.6em 0 0; overflow:hidden;}
+.nota-last{ width:42%; max-width:319px; height:170px; margin:20px 3.6em 0 0 ;  overflow:hidden; }
+#fxhover{ cursor:pointer;}
+.nota img, .nota-last img{ width:100%; position:relative; z-index:100;}
+.txt_noti{ background:url(../image/bg_txt_slider.png) repeat 0 0; width:100%;margin-top:-75px;position:relative; z-index:200; height:190px}
+.nota h4 ,.nota-last h4{ font-family: 'oswaldbook'; font-weight:normal;  margin:0; color:#fff; padding:10px 5px;font-size:0.875em; text-transform:uppercase; }
+.nota h4 .fecha, .nota-last h4 .fecha{color:#6da3d0;}
+.txt_noti p{ margin-left:0; padding-left:0; }
+
+.nota p , .nota-last p{  padding:5px; margin:0;font-size:0.875em; color:#fff;}
+a.link{ color:#82c6ff; text-align:center; text-decoration:none; text-transform:uppercase;
+font-family: 'oswaldbook'; font-size:0.875em; float:right; margin:0 ; padding: 5px;}
+a:hover.link{ color:#ccc;}
+
+
+
+.box-full,.box-full2 { width:100%; float:left; margin:25px 0 0 0;}
+.box-full2{background:#fff; padding:25px 0; }
+
+
+
+.box-sponsor{ width:100%; float:left; margin:15px 0 0 0;background:#fff;border-bottom:1px solid #d5d6d8; padding:15px 0;
+text-align:center;}
+.box-sponsor img{ margin:0 1%; }
+.box-full h2, .box-col h2{  font-size:1.25em; font-family: 'oswaldbook'; color:#fff; font-weight:normal; margin:0; text-transform:uppercase;
+background: #4065c5; padding:5px 10px;
+}
+.tituloNovedades{ background:#2f343a; border-bottom:28px solid #4065c5;}
+.tituloNovedades  h2{ width:11%;}
+.box-col h2{ padding:0 20px;}
+
+.box-seccion{ width:34%;
+max-width:229px; overflow:hidden;
+float:left; margin-right:0.4em; margin-left:0.4em;
+background:#fff;
+border-bottom:1px solid #d5d6d8;
+margin-top:10px;
+}
+
+.box-seccion-last {width:34%;
+max-width:229px; overflow:hidden;
+float:left; margin-right:0.4em; margin-left:0.4em;
+background:#fff;
+border-bottom:1px solid #d5d6d8;
+margin-top:10px;}
+
+.box-seccion p.titulo-azul, .box-seccion-last p.titulo-azul  {width:100%;font-family: 'oswaldbook'; font-size: 0.875em; background:#4268cb; color:#fff; padding:5px 10px; margin-top:0;
+ }
+.box-seccion p, .box-seccion-last p{font-size:0.8125em; padding:0 5px;}
+.fechasAgenda{color:#4c6dc1;}
+.box-seccion p a , .box-seccion-last p a{ text-decoration:none; color:#4c6dc1;font-weight:bold;padding: 3px 0;}
+.box-seccion p a:hover,  .box-seccion-last p a:hover{ text-decoration:underline;}
+
+ 
+ .body_evento{min-height:110px;}
+ 
+ 
+ 
+
+
+
+/*-------Pie------*/
+footer{
+max-width:730px; width:100%;height:auto;margin:15px auto 0 auto;
+
+ font-size:0.75em;color:#fff;
+}
+.logo-pie{ width:13%; float:left;}
+.logo-pie img{ width:100%; max-width:107px;}
+.txt-dir{float:left;width:38%; margin:20px 0 0 0;}
+footer  a{display:block; color:#4268cb; text-decoration:none; }
+footer a:hover{ color:#fff; }
+footer form{ float:right;width:45%;}
+footer form p{ padding:5px 0; width:80%; float:left; margin: 0;}
+footer form p.boton{width:20%;}
+footer  input{ background:#fff; border:none; padding:5px;float:left; width:60%;}
+
+footer  p label{ width:30%;float:left;  padding:0 5px;}
+footer  input.btn_suscripcion{ width:100%;font-size:0.8125em;text-transform:uppercase; color:#fff; float:right; text-decoration:none; background:#109f4f;font-family: 'oswaldbook';
+margin:0; padding:5px 0;text-decoration:none;text-transform:uppercase; border:none; } 
+
+
+/*-------------> BAROUSEL */
+.barousel
+{
+    position:relative;
+    margin-bottom:0px;
+  
+    width:100%;
+    height:388px;
+  
+}
+
+.barousel_image
+{
+    position:absolute;
+    z-index:10;
+    width:100%;
+    height:388px;
+	
+}
+
+.barousel_image img
+{ width:100%;
+    position:absolute;
+    display:none;
+}
+
+.barousel_image img.default
+{    
+    display:block;
+}
+
+.barousel_image img.current
+{
+    z-index:10;
+}
+
+.barousel_image img.previous
+{
+    z-index:5;
+}
+
+.barousel_content
+{
+    position:absolute;
+    padding:10px 5%;    
+    z-index:50;
+    background:#2f343a;
+    color:#fff;
+    width:90%;
+	
+    bottom:0px;
+    left:0px;
+}
+
+.barousel_content div
+{
+    display:none;    
+}
+
+.barousel_content div.default
+{
+    display:block;    
+}
+
+.barousel_content p
+{
+    font-size:0.875em;
+    font-weight:normal; 
+  	margin:5px 0 0 0; 
+}
+.barousel_content p.link_slider{margin:10px 0 0 0;}
+.amarillo{ color:#ffba00;}
+.barousel_content p.header
+{
+    font-size:1em;
+    font-weight:normal;
+    font-family: 'oswaldbook';
+    color:#fff;
+		margin:10px 0 0 0;
+		text-transform:uppercase;
+}
+
+.barousel_content a
+{
+    
+    background-color:#4268cb !important;
+	color:#fff;
+	text-transform:uppercase; padding:5px 15px;
+	text-decoration:none;
+}
+
+.barousel_content a:hover
+{
+    
+    background-color:#4268cb !important;
+	color:#eee;
+	
+}
+
+
+
+/*-------------> THSLIDE */
+.thslide
+{    
+    background:#fff;
+    width:100%;
+    height:68px;
+    border-top:15px solid #4268cb;
+	
+}
+
+.thslide_nav_previous
+{
+    float:left;    
+}
+
+.thslide_nav_next
+{
+    float:right;    
+}
+
+.thslide_nav_previous a,
+.thslide_nav_next a
+{
+    display:block;
+    width:60px;
+    height:68px;     
+    text-decoration:none;  
+   
+}
+
+.thslide_nav_previous a
+{
+    background-image:url(../image/prev.png);    
+    background-position:center;background-repeat:no-repeat;
+}
+
+.thslide_nav_next a
+{
+    background-image:url(../image/next.png);    
+    background-position:center;
+	background-repeat:no-repeat;
+}
+
+.thslide_nav_previous a:hover,
+.thslide_nav_next a:hover
+{
+}
+
+.thslide_list
+{
+    float:left;
+    overflow:hidden;   
+    position:relative; 
+    width:260px;
+    height:52px;
+	margin:9px 0 0 0;   
+}
+
+.thslide_list ul
+{
+    float:left;
+    width:9000px;
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.thslide_list li
+{
+    float:left;
+    margin-right:6px;
+	border:1px solid #e3e3e3;
+}
+
+.thslide_list li a
+{
+    display:block;
+    position:relative;
+    width:77px;
+    height:45px;    
+    text-decoration:none;
+}
+
+.thslide_list li a img
+{
+     width:77px;
+    height:45px; 
+}
+
+.thslide_list li a span
+{
+    position:absolute;
+    display:block;
+    width:77px;
+    height:45px;    
+}
+
+.thslide_list li a:hover span,
+.thslide_list li a.current span
+{    
+       width:80px;
+    height:50px; 
+}
+
+/* Specific implementation */
+#barousel_thslide
+{
+    height:470px;
+}
+
+#barousel_thslide .barousel_content
+{
+    bottom:81px;
+}
+
+#thslide_barousel_nav
+{
+    position:absolute;
+    bottom:0;
+}
+
+/* force a height so the tabs don't jump as content height changes */
+#tabs{background:#4268cb; float:left; color:#fff;}
+#tabs .tabs-spacer { float: left;   }
+.tabs-bottom .ui-tabs-nav { clear: left; padding: 0; }
+.tabs-bottom .ui-tabs-nav li { top: auto; bottom: 0; margin: 0 0; border-bottom: auto; border-top: 0; }
+.tabs-bottom .ui-tabs-nav li.ui-tabs-active { margin-top: -1px; padding-top: 1px; }
+.ui-tabs-vertical { width:100%;  }
+
+.ui-tabs-vertical .ui-tabs-nav { padding:0; float: left; width:100%;max-width:290px; margin:8px 0; }
+.ui-tabs-vertical .ui-tabs-nav li{ 
+list-style:none; clear: left; 
+width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important;
+ margin: 0 -1px .2em 3px; background:#4268cb url(../image/btn_tabs.png) no-repeat right center; 
+ width:100%; max-width:300px; height:43px; padding:0; }
+ .ui-tabs-vertical .ui-tabs-nav li.top{border-bottom-color:#f7f7f7; border-bottom-style:solid;}
+.ui-tabs-vertical .ui-tabs-nav li a { 
+ color:#fff; text-decoration:none; text-transform:uppercase;
+font-size:0.75em; padding:10px; width:80%; float:left;}
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { 
+padding-bottom: 0; padding-right:0; border-right-width:0; border-right-width:0;
+ }
+.ui-tabs-vertical .ui-tabs-panel { padding:0 4px 10px 4px; float: left; width:100%; max-width:300px;height:235px; overflow:hidden; background:#2f343a;}
+.ui-tabs-vertical .ui-tabs-panel p{ padding:0 10px; margin:5px 0; font-size:0.875em;font-family: 'oswaldbook';}
+.ui-tabs-vertical .ui-tabs-panel  a.link_video
+{
+    
+    background-color:#4268cb !important;
+	color:#fff;
+	font-size:0.875em;
+	text-transform:uppercase; padding:5px 15px;
+	text-decoration:none;
+	float:right; 
+}
+
+.ui-tabs-vertical .ui-tabs-panel object{width:100%; min-height:200px; }
+
+.barraAzul{ display:block; width:100%;float:left; height:28px;background: #4065c5; margin:10px 0 0 0;}
+.logos_col{ padding:15px 0;}
